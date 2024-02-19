@@ -1,0 +1,106 @@
+.all_page {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "navigation main"
+        "navigation main"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 20px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: blue;
+    border: 1px solid black;
+    height: 150px;
+}
+
+.navigation {
+    grid-area: navigation;
+    background-color: yellow;
+    border: 1px solid black;
+    height: 428px;
+    width: 100px;
+}
+
+.main{
+    display: grid;
+    grid-template-areas:"main_5 main_5"
+                        "main_4 main_4";
+    width: 1331px;
+}
+.main_4 {
+    grid-area: main_4;
+    background-color: #fff;
+    border: 1px solid black;
+    height: 327px;
+}
+.main_5 {
+    grid-area: main_5;
+    background-color: yellow;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: blue;
+    border: 1px solid black;
+    height: 150px;
+}
+
+.lyst{
+    font-size: 12px;
+    text-align: start;
+    text-decoration: none;
+
+}
+
+.text{
+    font-size: 12px;
+    margin-top:-40px;
+    color: blue;
+}
+
+.all_lyst{
+    margin-top: 10px;
+    list-style-type:none;
+}
+
+p{
+    color: red;
+}
+
+.main_5:hover,
+.main_4:hover,
+.footer:hover,
+.header:hover,
+.navigation:hover{
+background-color: aqua;
+}
+
+.text:hover{
+    font-size: 20px;
+}
+
+p:hover{
+    border-bottom: 1px solid red;
+    cursor: pointer;
+
+}
+.lyst:hover{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.title:active{
+        color: red;
+        cursor: pointer;
+}
+
+.title:hover{
+        cursor: pointer;
+} 
